@@ -3,7 +3,7 @@
 A magnetic sensor with the following geometry has been simulated using Comsol. 
 
 <p align="center">
-  <img src="https://github.com/sepidehkhakzad/ComsolProjects/blob/main/Magnetic%20Sensor/Geometry.png" alt="PDF PNG" width="300" height="300">
+  <img src="https://github.com/sepidehkhakzad/ComsolProjects/blob/main/Magnetic%20Sensor/Geometry.png" alt="PDF PNG" width="350" height="300">
 </p>
 
 Based on the conducted research, the best material for constructing a magnetic sensor is Ferrous metal or steel (fe360), so the parts are considered to be made of steel, and their permeability coefficients are determined as follows:
