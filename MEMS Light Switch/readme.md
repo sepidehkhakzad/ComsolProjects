@@ -24,13 +24,13 @@ The base material for silicon is considered as <100>Si, and its specifications a
 To generate a magnetic field using a coil, the magnetic fields physics was added. Due to the symmetry created in our design, the axial symmetry section was also added to the project.
 
 <p align="center">
-  <img src="./Figures/phys.png" width="300" height="300" alt="phys">
+  <img src="./Figures/phys.png" width="100" height="300" alt="phys">
 </p>
 
 For modeling the coil placed on the surface, we utilized the external current density and defined the current according to the figure.
 
 <p align="center">
-  <img src="./Figures/ext.png" width="300" height="300" alt="ext">
+  <img src="./Figures/ext.png" width="200" height="300" alt="ext">
 </p>
 
 
