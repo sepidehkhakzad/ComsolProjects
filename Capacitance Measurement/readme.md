@@ -23,15 +23,15 @@ $$
 
 To increase the sensitivity to height changes, the derivative of the capacitance with respect to L is calculated using MATLAB.
 
-'''
-  syms alpha L C;
+
+'''syms alpha L C;
   C = 2 * pi * 20 * L / log(alpha);
   dC = diff(C, L);
 '''
+
 Result is:
 
-$$
-  \begin{aligned}
+$$\begin{aligned}
   dC = \frac{40 \pi}{log \alpha}
   \end{aligned}
 $$ 
@@ -57,8 +57,7 @@ The resulting design is implemented in Altium Designer, and the C code for readi
 
 Implementation - C Code: (The rest is as main.cpp)
 
-'''
-  #include <avr/io.h>
+'''#include <avr/io.h>
   #include <util/delay.h>
   #include "lcd.h"
 
