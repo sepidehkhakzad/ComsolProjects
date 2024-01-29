@@ -1,6 +1,6 @@
 # Capacitive Sensor Design and Simulation
 
-We have illustrated a number of apacitive sensor shapes and connected their relevant parts. For the first sensor, we drew the sensor shape, assuming the rectangular bottom is made of air, and the capacitor itself is made of copper. We considered a relative permittivity of 16e1.
+We have illustrated a number of capacitive sensor shapes and connected their relevant parts. For the first sensor, we drew the sensor shape, assuming the rectangular bottom is made of air, and the capacitor itself is made of copper. We considered a relative permittivity of 16e1.
 
 <p align="center">
   <img src="./Figures/geo1.png" width="400" height="300" alt="geo1">
