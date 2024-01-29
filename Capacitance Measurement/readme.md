@@ -24,10 +24,10 @@ $$
 To increase the sensitivity to height changes, the derivative of the capacitance with respect to L is calculated using MATLAB.
 
 
-'''syms alpha L C;
+```syms alpha L C;
   C = 2 * pi * 20 * L / log(alpha);
   dC = diff(C, L);
-'''
+```
 
 Result is:
 
@@ -47,17 +47,17 @@ The output using alpha = 0.9 is illusterated below:
 ## Voltage Control
 To ensure the output voltage falls within the 0 to 5 range, suitable for microcontroller ADC inputs, the following equations are solved:
 
-'''
+```
 eqns = [((C1/(456+C1))-(R3/(R3+100)))+0.5==0, (C1/(40+C1))-(R3/(100+R3))==0];
 vars = [C1 R3];
 [solC1, solR3] = solve(eqns, vars);
-'''
+```
 
 The resulting design is implemented in Altium Designer, and the C code for reading voltage on ADC and displaying height on an LCD is provided.
 
 Implementation - C Code: (The rest is as main.cpp)
 
-'''#include <avr/io.h>
+```#include <avr/io.h>
   #include <util/delay.h>
   #include "lcd.h"
 
@@ -81,6 +81,6 @@ Implementation - C Code: (The rest is as main.cpp)
           _delay_ms(50);
       }
   }
-'''
+```
 
 Note: The prescaler is set to 128, and the ADC response is divided by this value. The result is then multiplied by the reference voltage (AREF/128) to obtain the height value.
