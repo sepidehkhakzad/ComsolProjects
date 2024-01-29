@@ -15,19 +15,22 @@ In practice, the primary coil of the LVDT is excited by an alternating current w
 Considering the desired geometry as follows:
 
 <p align="center">
-  <img src="./Figures/geo.png" width="500" height="300" alt="geo">
+  <img src="./Figures/geo.jpg" width="400" height="300" alt="geo">
 </p>
 
 we illustrated the coil in Comsol as:
 
 <p align="center">
-  <img src="./Figures/geo2.png" width="500" height="300" alt="geo2">
+  <img src="./Figures/geo2.png" width="400" height="300" alt="geo2">
 </p>
 
 We define the internal circle position as a variable x. Introduce the magnetic field physics and place two coils with zero excitation voltage on the upper sides and a coil with a current of 1 ampere in the middle. Sweep the variable x. The final response is:
 
 <p align="center">
-  <img src="./Figures/res1.png" width="500" height="300" alt="res">
+  <img src="./Figures/res1.png" width="400" height="300" alt="res">
 </p>
 
-![Video][./Figures/res2.mp4]
+<p align="center">
+  <img src="./Figures/res1.gif" width="400" height="300" alt="res">
+</p>
+
