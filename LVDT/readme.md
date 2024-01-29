@@ -1,47 +1,33 @@
-# Heat Transfer in Solids
+# LVDT (Linear Variable Differential Transformer) Sensor
 
-We calculate and display heat transfer in a rode and beam setting using Comsol Software while considering the homogeneity of the two. 
+LVDT, short for "Linear Variable Differential Transformer," is a common type of electromechanical transducer capable of converting linear movement or displacement into an electrical signal.
 
-### Drawn Geometry:
-The system is a rode and beam with $r=22mm$
+## Internal Structure of LVDT
 
-<p align="center">
-  <img src="./Figures/geo.png" width="400" height="300" alt="geo">
-</p>
+The internal structure of an LVDT consists of a primary coil placed between a pair of secondary coils, all wound uniformly. These coils are spaced symmetrically around the primary coil. The coils are placed on a mechanically and thermally reinforced polymer piece, which is magnetically insulated. This assembly is then encased in a steel housing. The provided parameters in the attached figure, labeled as A (representing the length of the sensor body) and B (representing the length of the core), define the fixed part of the LVDT sensor.
 
-### Material Selection
+The movable part of an LVDT includes a steel rod, referred to as the core, made of magnetic material. This core can move freely inside a cylindrical coil assembly, as described earlier. The piston, connected to the piece whose displacement needs to be measured, is also attached to and moves within the cylinder. The cylinder provides enough space for the core to move without physical contact with the cylinder body.
 
-We selected the Material as blank and, we assigned constants as shown below to comply with our material of choice:
-<p align="center">
-  <img src="./Figures/setting.png" width="400" height="300" alt="setting">
-</p>
+In practice, the primary coil of the LVDT is excited by an alternating current with an appropriate amplitude and frequency. The electrical output signal of the LVDT is the difference between the voltages induced in the secondary coils, which changes with the axial displacement of the piston within the core. Typically, this AC output voltage is amplified and converted to a DC voltage or current by electronic circuits for further use.
 
+## Implementation
 
-### Physics
-
-For physics, we chose Heat transfer in solids and entered $T_1$ at the left end of the rod. We defined $T_1$ in the parameters section and then performed a sweep.
-<p align="center">
-  <img src="./Figures/sweep.gif" width="400" height="300" alt="sweep">
-</p>
-
-### Mesh Selection
-
-We considered the mesh as normal and physics controlled.
-
-### Study Settings
-
-We selected the study as time-dependent, considering a transfer time of 100. Also, after 200 seconds, the same result will be obtained, so 100 seconds will be sufficient for heat to transfer from the end of the rod to the sphere.
-
-In this study, with a parametric sweep, we swept the initial temperature and observed the output response,
-
-### Result
-We observe a linear response compatible with the heat transfer equation in solids ([Heat Transfer eqaution](https://doc.comsol.com/5.5/doc/com.comsol.help.heat/heat_ug_theory.07.07.html)).
-
-Additionally, since we initially considered the temperature of the sphere as 293 Kelvin, when $T_1$ is less than this value, the temperature of the sphere also decreases.
+Considering the desired geometry as follows:
 
 <p align="center">
-  <img src="./Figures/result.png" width="400" height="300" alt="result">
+  <img src="./Figures/geo.png" width="500" height="300" alt="geo">
 </p>
 
+we illustrated the coil in Comsol as:
 
-Simulation file can be found in the repo.
+<p align="center">
+  <img src="./Figures/geo2.png" width="500" height="300" alt="geo2">
+</p>
+
+We define the internal circle position as a variable x. Introduce the magnetic field physics and place two coils with zero excitation voltage on the upper sides and a coil with a current of 1 ampere in the middle. Sweep the variable x. The final response is:
+
+<p align="center">
+  <img src="./Figures/res1.png" width="500" height="300" alt="res">
+</p>
+
+![Video][./Figures/res2.mp4]
