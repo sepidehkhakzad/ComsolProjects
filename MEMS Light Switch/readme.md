@@ -4,7 +4,7 @@
 A three-dimensional magnetic field influences a torque that alters the movement of a beam. We plotted the shape below in the r-phi-z plane and then revolved it in three-dimensional space. As described in the design section, there is a silicon layer beneath the surface where the coil is placed, and this layer is circular. Another silicon layer is present at a distance from the previous layer, which, due to the applied torque and force, will be deflected and alter the path of light. Additionally, a cylinder-like shape is considered as the surrounding air, larger than the entire switch, to encapsulate it.
 
 <p align="center">
-  <img src="./Figures/geo.png" width="400" height="300" alt="geo">
+  <img src="./Figures/geo.png" width="500" height="300" alt="geo">
 </p>
 
 ## Material Specifications
@@ -24,13 +24,13 @@ The base material for silicon is considered as <100>Si, and its specifications a
 To generate a magnetic field using a coil, the magnetic fields physics was added. Due to the symmetry created in our design, the axial symmetry section was also added to the project.
 
 <p align="center">
-  <img src="./Figures/phys.png" width="400" height="300" alt="phys">
+  <img src="./Figures/phys.png" width="300" height="300" alt="phys">
 </p>
 
 For modeling the coil placed on the surface, we utilized the external current density and defined the current according to the figure.
 
 <p align="center">
-  <img src="./Figures/ext.png" width="400" height="300" alt="ext">
+  <img src="./Figures/ext.png" width="300" height="300" alt="ext">
 </p>
 
 
@@ -57,7 +57,7 @@ After adding these two physics to the project, to couple them and allow the magn
 Meshing was done using a Quad Free mesh on the magnetostrictive layer and a Triangular Free mesh in other regions of the geometry.
 
 <p align="center">
-  <img src="./Figures/mesh.png" width="600" height="300" alt="mesh">
+  <img src="./Figures/mesh.png" width="700" height="300" alt="mesh">
 </p>
 
 2.5 Simulation
