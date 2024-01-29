@@ -4,6 +4,11 @@ This repository presents a Capacitance Measurement and Control System based on t
 
 ## Methodology
 The geometry is illustrated using Comsol Software. The "Electrostatic" physics is utilized and the ground and terminal plates are determined.
+
+<p align="center">
+  <img src="./Figures/comsol.png" width="400" height="300" alt="linear">
+</p>
+
 The linear relationship of the capacitance with respect to the Liquid height (L) is established for a constant alpha.
 This result complies with capacitance equations which are as follows:
 
