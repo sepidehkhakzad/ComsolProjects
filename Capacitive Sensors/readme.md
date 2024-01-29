@@ -23,7 +23,7 @@ We defined the parameters that we wanted to observe for their impact on capacito
 ## Simulation Results
 The x-axis was set as the variable being swept, and the y-axis as the capacitor capacitance. The output is depicted below, illustrating the final response.
 <p align="center">
-  <img src="./Figures/res1.png" width="400" height="300" alt="res1">
+  <img src="./Figures/res1.png" width="600" height="300" alt="res1">
 </p>
 
 ## Second Sensor
@@ -61,7 +61,7 @@ Variables to be swept were defined, and a stationary Study was conducted with pa
 
 
 <p align="center">
-  <img src="./Figures/res2.png" width="400" height="300" alt="res2">
+  <img src="./Figures/res2.png" width="300" height="300" alt="res2">
 </p>
 
 
