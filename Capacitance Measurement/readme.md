@@ -6,6 +6,7 @@ This repository presents a Capacitance Measurement and Control System based on t
 The geometry is illustrated using Comsol Software. The "Electrostatic" physics is utilized and the ground and terminal plates are determined.
 The linear relationship of the capacitance with respect to the Liquid height (L) is established for a constant alpha.
 This result complies with capacitance equations which are as follows:
+
 $$
 \begin{aligned}
 q=\varepsilon \cdot E A= \varepsilon \cdot E(2 \pi r L) \quad E=\frac{q}{2 \pi \varepsilon r L}
@@ -23,16 +24,16 @@ $$
 To increase the sensitivity to height changes, the derivative of the capacitance with respect to L is calculated using MATLAB.
 
 '''
-syms alpha L C;
-C = 2 * pi * 20 * L / log(alpha);
-dC = diff(C, L);
+  syms alpha L C;
+  C = 2 * pi * 20 * L / log(alpha);
+  dC = diff(C, L);
 '''
 Result is:
-$$
 
-\begin{aligned}
-dC = \frac{40 \pi}{log \alpha}
-\end{aligned}
+$$
+  \begin{aligned}
+  dC = \frac{40 \pi}{log \alpha}
+  \end{aligned}
 $$ 
 
 The result shows that alpha should be as large as possible for increased sensitivity. The maximum of alpha can be 1, however, to maintain a stable capacitor structure, we set alpha to 0.9 since the graphical representation indicates that higher alphas lead to turbulent and unpredictable capacitor shapes.
