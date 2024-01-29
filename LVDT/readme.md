@@ -31,6 +31,6 @@ We define the internal circle position as a variable x. Introduce the magnetic f
 </p>
 
 <p align="center">
-  <img src="./Figures/res1.gif" width="400" height="300" alt="res">
+  <img src="./Figures/res2.gif" width="400" height="300" alt="res">
 </p>
 
