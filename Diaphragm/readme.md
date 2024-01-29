@@ -18,5 +18,5 @@ The physics employed in electromechanics involve the displacement and load appli
 Finally, the response of changes in capacitance concerning the applied pressure will be as follows:
 
 <p align="center">
-  <img src="./Figures/result.png" width="400" height="300" alt="result">
+  <img src="./Figures/result.png" width="500" height="300" alt="result">
 </p>
