@@ -1,4 +1,4 @@
-# <div align="center"> Pneumonia Detection <br/> <br/> <img src="./Icon.jpeg" width="150"> </div>
+# <div align="center"> Sensor Design and Simulation with Comsol Software <br/> <br/> <img src="./Icon.jpeg" width="150"> </div>
 
 # Sensor Design and Simulation with Comsol Software
 
